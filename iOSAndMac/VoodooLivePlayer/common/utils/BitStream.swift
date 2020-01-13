@@ -1,6 +1,6 @@
 //
 //  BitStream.swift
-//  live_player
+//  VoodooLivePlayer
 //
 //  Created by voodoo on 2019/12/17.
 //  Copyright © 2019 Voodoo-Live. All rights reserved.

@@ -1,6 +1,6 @@
 //
 //  PlayerFLVPipeline.swift
-//  live_player
+//  VoodooLivePlayer
 //
 //  Created by voodoo on 2019/12/9.
 //  Copyright © 2019 Voodoo-Live. All rights reserved.
@@ -16,7 +16,7 @@ class LiveFLVPipeline : LiveCustomPipeline {
     var videoDecoder:LiveVideoDecoder?
     var audioDecoder:LiveAudioDecoder?
     
-    let dispatchQueue = DispatchQueue(label: "live_player.LivePlayerFLVPipeline.queue")
+    let dispatchQueue = DispatchQueue(label: "VoodooLivePlayer.LivePlayerFLVPipeline.queue")
 
     init?(player: LivePlayer, source:LiveStreamSource) {
         if source.type != .HTTP_FLV { return nil }

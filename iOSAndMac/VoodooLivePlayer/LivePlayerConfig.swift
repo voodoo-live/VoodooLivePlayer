@@ -1,6 +1,6 @@
 //
 //  LivePlayerConfig.swift
-//  live_player
+//  VoodooLivePlayer
 //
 //  Created by voodoo on 2019/12/10.
 //  Copyright © 2019 Voodoo-Live. All rights reserved.

@@ -1,6 +1,6 @@
 //
-//  liveProtocol.swift
-//  live_protocol
+//  LiveLoader.swift
+//  VoodooLivePlayer
 //
 //  Created by voodoo on 2019/12/4.
 //  Copyright © 2019 Voodoo-Live. All rights reserved.

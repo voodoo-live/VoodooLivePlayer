@@ -1,6 +1,6 @@
 //
 //  pt.h
-//  QLive
+//  VoodooLivePlayer
 //
 //  Created by voodoo on 2019/12/7.
 //  Copyright © 2019 Voodoo-Live. All rights reserved.

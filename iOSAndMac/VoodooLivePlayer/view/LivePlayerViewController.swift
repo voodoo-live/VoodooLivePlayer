@@ -1,6 +1,6 @@
 //
 //  LivePlayerViewController.swift
-//  live_mac
+//  VoodooLivePlayer
 //
 //  Created by voodoo on 2019/12/25.
 //  Copyright © 2019 Voodoo-Live. All rights reserved.

@@ -1,6 +1,6 @@
 //
 //  LiveListViewController.swift
-//  QLivePlayer
+//  LivePlayeriOS
 //
 //  Created by voodoo on 2019/12/22.
 //  Copyright © 2019 Voodoo-Live. All rights reserved.

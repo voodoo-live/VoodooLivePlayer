@@ -1,6 +1,6 @@
 //
 //  LiveTimer.swift
-//  QLive
+//  VoodooLivePlayer
 //
 //  Created by voodoo on 2019/12/27.
 //  Copyright © 2019 Voodoo-Live. All rights reserved.

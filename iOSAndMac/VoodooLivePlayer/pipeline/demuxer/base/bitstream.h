@@ -1,6 +1,6 @@
 //
 //  bitstream.h
-//  QLive
+//  VoodooLivePlayer
 //
 //  Created by voodoo on 2019/12/12.
 //  Copyright © 2019 Voodoo-Live. All rights reserved.
