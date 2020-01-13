@@ -1,0 +1,1234 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		104A707523B447A200F96266 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104A707423B447A200F96266 /* MainWindowController.swift */; };
+		106968DD23970452009E90BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106968DC23970452009E90BC /* AppDelegate.swift */; };
+		106968E123970452009E90BC /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106968E023970452009E90BC /* LiveViewController.swift */; };
+		106968E423970452009E90BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 106968E223970452009E90BC /* Main.storyboard */; };
+		106968E623970453009E90BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 106968E523970453009E90BC /* Assets.xcassets */; };
+		106968E923970453009E90BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 106968E723970453009E90BC /* LaunchScreen.storyboard */; };
+		109418A623CCB08700D0D46B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 109418A423CCACAD00D0D46B /* Default-568h@2x.png */; };
+		10AA4BD023C55A7B002A4E6F /* RTMPMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AA4BCF23C55A7B002A4E6F /* RTMPMessage.swift */; };
+		10AA4BD323C59E55002A4E6F /* RTMPNetConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AA4BD223C59E55002A4E6F /* RTMPNetConnection.swift */; };
+		10AA4BD523C59E62002A4E6F /* RTMPChunkStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AA4BD423C59E62002A4E6F /* RTMPChunkStream.swift */; };
+		10AA4BD723C59E82002A4E6F /* RTMPMessageStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AA4BD623C59E82002A4E6F /* RTMPMessageStream.swift */; };
+		10AA4BDC23C68FFD002A4E6F /* RTMPAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AA4BDB23C68FFD002A4E6F /* RTMPAddress.swift */; };
+		10AA4BDF23C69C93002A4E6F /* RTMPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AA4BDE23C69C93002A4E6F /* RTMPError.swift */; };
+		10AA4BE223C6E608002A4E6F /* NWQueuedSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AA4BE123C6E608002A4E6F /* NWQueuedSerializer.swift */; };
+		10AA4BE423C7145F002A4E6F /* RTMPChunkParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AA4BE323C7145F002A4E6F /* RTMPChunkParser.swift */; };
+		10AA4BE623C71931002A4E6F /* RTMPHandShake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AA4BE523C71931002A4E6F /* RTMPHandShake.swift */; };
+		10CA000023C1C3BC00D80DED /* LiveAudioCodedFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107235DD23A3AEA100CC242D /* LiveAudioCodedFrame.swift */; };
+		10CA001723C1C3D700D80DED /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10921951239FA6C800A26206 /* Errors.swift */; };
+		10CA001823C1C3D700D80DED /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102CA1FF23A9DD12005C72BF /* Constants.swift */; };
+		10CA001923C1C3D800D80DED /* LiveRenderSynchronizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104F688123A9AA9A007B33EE /* LiveRenderSynchronizer.swift */; };
+		10CA001A23C1C3D800D80DED /* LiveRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102CA20323AA04D1005C72BF /* LiveRenderer.swift */; };
+		10CA001B23C1C3E000D80DED /* LiveDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1043AB1F239A5E6C002CE873 /* LiveDecoder.swift */; };
+		10CA001C23C1C3E000D80DED /* LiveVideoDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1026A6DE239F4AB800322D17 /* LiveVideoDecoder.swift */; };
+		10CA001D23C1C3E000D80DED /* LiveAudioDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108431FB239F4B99007211B4 /* LiveAudioDecoder.swift */; };
+		10CA001E23C1C3E000D80DED /* LiveSampleBufferVideoDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102CA20523AA06CF005C72BF /* LiveSampleBufferVideoDecoder.swift */; };
+		10CA001F23C1C3E000D80DED /* LiveSampleBufferAudioDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102CA20723AA06DC005C72BF /* LiveSampleBufferAudioDecoder.swift */; };
+		10CA002023C1C3EC00D80DED /* LiveFLVDemuxer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1043AB16239A5C8B002CE873 /* LiveFLVDemuxer.swift */; };
+		10CA002123C1C3EC00D80DED /* flv.c in Sources */ = {isa = PBXBuildFile; fileRef = 1043AB1A239A5C9C002CE873 /* flv.c */; };
+		10CA002223C1C3EC00D80DED /* LiveDemuxer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1043AB14239A5C3E002CE873 /* LiveDemuxer.swift */; };
+		10CA002323C1C3F300D80DED /* LiveLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106968BC2396FB16009E90BC /* LiveLoader.swift */; };
+		10CA002423C1C3F300D80DED /* LiveFLVLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106968B42396F541009E90BC /* LiveFLVLoader.swift */; };
+		10CA002523C1C3F300D80DED /* LiveRTMPLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1043AB37239DAF38002CE873 /* LiveRTMPLoader.swift */; };
+		10CA002623C1C3F300D80DED /* LiveHLSLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1043AB39239DAF46002CE873 /* LiveHLSLoader.swift */; };
+		10CA002923C1C41600D80DED /* LivePipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1043AB3B239E72EF002CE873 /* LivePipeline.swift */; };
+		10CA002A23C1C41600D80DED /* LiveFLVPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1043AB3F239E738C002CE873 /* LiveFLVPipeline.swift */; };
+		10CA002B23C1C41600D80DED /* LiveHLSPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E40B1B23AE31E3006688CF /* LiveHLSPipeline.swift */; };
+		10CA002C23C1C41600D80DED /* LiveCustomPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E40B1D23AE332B006688CF /* LiveCustomPipeline.swift */; };
+		10CA002D23C1C41F00D80DED /* LivePlayerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10921953239FCC4600A26206 /* LivePlayerConfig.swift */; };
+		10CA002E23C1C41F00D80DED /* LivePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1043AB1C239A5CEC002CE873 /* LivePlayer.swift */; };
+		10CA003123C1C63800D80DED /* libVoodooLivePlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10CAFFC323C1BF7500D80DED /* libVoodooLivePlayer.a */; };
+		10CA003423C1C64F00D80DED /* libVoodooLivePlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10CAFFC323C1BF7500D80DED /* libVoodooLivePlayer.a */; };
+		10CA003823C2D12A00D80DED /* LiveRTMPPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CA003723C2D12A00D80DED /* LiveRTMPPipeline.swift */; };
+		10CA003D23C2D1CD00D80DED /* LiveRTMPDemuxer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CA003C23C2D1CD00D80DED /* LiveRTMPDemuxer.swift */; };
+		10CA003E23C2D38500D80DED /* libVoodooNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10CAFFA223C1A79000D80DED /* libVoodooNetwork.a */; };
+		10CA003F23C2D38900D80DED /* libVoodooNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10CAFFA223C1A79000D80DED /* libVoodooNetwork.a */; };
+		10CA004123C4311800D80DED /* AMF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CA004023C4311800D80DED /* AMF.swift */; };
+		10CA004523C4675200D80DED /* RTMPStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CA004423C4675200D80DED /* RTMPStream.swift */; };
+		10CAFFA923C1A82000D80DED /* NWSOCKSLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1009E72C23BF42E5007A64B5 /* NWSOCKSLayer.swift */; };
+		10CAFFAA23C1A82000D80DED /* NWTCPLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1009E72E23BF42F4007A64B5 /* NWTCPLayer.swift */; };
+		10CAFFAB23C1A82000D80DED /* NWTLSLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1009E73023BF433A007A64B5 /* NWTLSLayer.swift */; };
+		10CAFFAC23C1A82000D80DED /* NWAsyncObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10407A8223BB31300002A601 /* NWAsyncObject.swift */; };
+		10CAFFAD23C1A82000D80DED /* NWAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10407A8423BB31D20002A601 /* NWAddress.swift */; };
+		10CAFFAE23C1A82000D80DED /* NWError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10407A8623BB32500002A601 /* NWError.swift */; };
+		10CAFFAF23C1A82000D80DED /* NWResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10407A8823BB32A70002A601 /* NWResolver.swift */; };
+		10CAFFB023C1A82000D80DED /* NWInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10407A8A23BB330C0002A601 /* NWInterface.swift */; };
+		10CAFFB123C1A82000D80DED /* NWConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10407A8C23BB33650002A601 /* NWConnection.swift */; };
+		10CAFFB223C1A82000D80DED /* NWEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10407A8E23BB33930002A601 /* NWEndPoint.swift */; };
+		10CAFFB323C1A82000D80DED /* NWPoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10407A9023BB35640002A601 /* NWPoller.swift */; };
+		10CAFFB423C1A82000D80DED /* NWSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10407A9223BB35720002A601 /* NWSocket.swift */; };
+		10CAFFB523C1A82000D80DED /* NWParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10407A9423BB35E90002A601 /* NWParameters.swift */; };
+		10CAFFB623C1A82000D80DED /* NWProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10407A9623BB36230002A601 /* NWProtocol.swift */; };
+		10CAFFB723C1A82000D80DED /* NWProtocolFramer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10407A9823BB376C0002A601 /* NWProtocolFramer.swift */; };
+		10CAFFB823C1A82000D80DED /* NWPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10407A9A23BB387C0002A601 /* NWPath.swift */; };
+		10CAFFB923C1A82000D80DED /* NWListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10407AE623BB3B4F0002A601 /* NWListener.swift */; };
+		10CAFFBA23C1A82000D80DED /* NWNetworkConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1009E72723BDDBE7007A64B5 /* NWNetworkConfiguration.swift */; };
+		10CAFFBB23C1A82000D80DED /* NWProtocolLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1009E72923BE23BE007A64B5 /* NWProtocolLayer.swift */; };
+		10CAFFE823C1C21900D80DED /* LiveListXiGua.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108A945D23A31868000D985D /* LiveListXiGua.swift */; };
+		10CAFFE923C1C21900D80DED /* LiveListDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108A946023A31D5A000D985D /* LiveListDownloader.swift */; };
+		10CAFFEA23C1C21900D80DED /* BitStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104F686423A8787F007B33EE /* BitStream.swift */; };
+		10CAFFEB23C1C21900D80DED /* LiveTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1020D28B23B5BC3300EAF5EB /* LiveTimer.swift */; };
+		10CAFFEC23C1C21900D80DED /* LiveAsyncResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104079CE23B704470002A601 /* LiveAsyncResult.swift */; };
+		10CAFFED23C1C21900D80DED /* AACFormatHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104F686623A89D91007B33EE /* AACFormatHelper.swift */; };
+		10CAFFEE23C1C21900D80DED /* VideoFormatHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104F687A23A980A9007B33EE /* VideoFormatHelper.swift */; };
+		10CAFFEF23C1C21900D80DED /* LiveAudioStreamInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104F686123A86DB4007B33EE /* LiveAudioStreamInfo.swift */; };
+		10CAFFF023C1C21900D80DED /* LiveVideoStreamInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104F687723A97F98007B33EE /* LiveVideoStreamInfo.swift */; };
+		10CAFFF123C1C21900D80DED /* LiveStreamInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107235D923A39BD100CC242D /* LiveStreamInfo.swift */; };
+		10CAFFF223C1C21900D80DED /* LiveStreamSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104F688323A9AEA4007B33EE /* LiveStreamSource.swift */; };
+		10CAFFF623C1C3AF00D80DED /* LiveAVPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104A706A23B359A100F96266 /* LiveAVPlayerViewController.swift */; };
+		10CAFFF723C1C3B000D80DED /* LivePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104A706C23B35D6500F96266 /* LivePlayerViewController.swift */; };
+		10CAFFF823C1C3B000D80DED /* LiveSBPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104A706E23B35D8C00F96266 /* LiveSBPlayerViewController.swift */; };
+		10CAFFF923C1C3B000D80DED /* LiveSBAudioRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104A707023B35E6800F96266 /* LiveSBAudioRenderer.swift */; };
+		10CAFFFA23C1C3B000D80DED /* LiveSBVideoRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104A707223B35E7900F96266 /* LiveSBVideoRenderer.swift */; };
+		10CAFFFB23C1C3BC00D80DED /* LiveFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1043AB2D239A99B4002CE873 /* LiveFrame.swift */; };
+		10CAFFFC23C1C3BC00D80DED /* LiveVideoCodedFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1092195523A0279A00A26206 /* LiveVideoCodedFrame.swift */; };
+		10CAFFFD23C1C3BC00D80DED /* LiveVideoDecodedFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1092195723A027AE00A26206 /* LiveVideoDecodedFrame.swift */; };
+		10CAFFFE23C1C3BC00D80DED /* LiveVideoFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1092195923A027DB00A26206 /* LiveVideoFrame.swift */; };
+		10CAFFFF23C1C3BC00D80DED /* LiveAudioFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107235DB23A3AE9100CC242D /* LiveAudioFrame.swift */; };
+		10CE750423C8CAA800B5DE03 /* NWSimpleRWSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CE750323C8CAA800B5DE03 /* NWSimpleRWSerializer.swift */; };
+		10E40B3D23AFA200006688CF /* LiveListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E40B3C23AFA200006688CF /* LiveListViewController.swift */; };
+		10E40B4523B07265006688CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E40B4423B07265006688CF /* AppDelegate.swift */; };
+		10E40B4723B07265006688CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E40B4623B07265006688CF /* ViewController.swift */; };
+		10E40B4923B07266006688CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10E40B4823B07266006688CF /* Assets.xcassets */; };
+		10E40B4C23B07266006688CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10E40B4A23B07266006688CF /* Main.storyboard */; };
+		10E40B5323B075B3006688CF /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E40B5223B075B3006688CF /* LiveViewController.swift */; };
+		10E40B5523B081D7006688CF /* LiveListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E40B5423B081D7006688CF /* LiveListCellView.swift */; };
+		10E40B5723B082EE006688CF /* LiveListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E40B5623B082EE006688CF /* LiveListViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		10CA002F23C1C62E00D80DED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A57B28CB4EE6A87DD783F6A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10CAFFC223C1BF7500D80DED;
+			remoteInfo = VoodooLivePlayer;
+		};
+		10CA003223C1C64900D80DED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A57B28CB4EE6A87DD783F6A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10CAFFC223C1BF7500D80DED;
+			remoteInfo = VoodooLivePlayer;
+		};
+		10CA003523C1CA3600D80DED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A57B28CB4EE6A87DD783F6A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10CAFFA123C1A79000D80DED;
+			remoteInfo = VoodooNetwork;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		10407A4223BB2BB60002A601 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10CAFFA023C1A79000D80DED /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10CAFFC123C1BF7500D80DED /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1009E72723BDDBE7007A64B5 /* NWNetworkConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWNetworkConfiguration.swift; sourceTree = "<group>"; };
+		1009E72923BE23BE007A64B5 /* NWProtocolLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWProtocolLayer.swift; sourceTree = "<group>"; };
+		1009E72C23BF42E5007A64B5 /* NWSOCKSLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWSOCKSLayer.swift; sourceTree = "<group>"; };
+		1009E72E23BF42F4007A64B5 /* NWTCPLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWTCPLayer.swift; sourceTree = "<group>"; };
+		1009E73023BF433A007A64B5 /* NWTLSLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWTLSLayer.swift; sourceTree = "<group>"; };
+		1020D28B23B5BC3300EAF5EB /* LiveTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveTimer.swift; sourceTree = "<group>"; };
+		1026A6DE239F4AB800322D17 /* LiveVideoDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveVideoDecoder.swift; sourceTree = "<group>"; };
+		102CA1FF23A9DD12005C72BF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		102CA20323AA04D1005C72BF /* LiveRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveRenderer.swift; sourceTree = "<group>"; };
+		102CA20523AA06CF005C72BF /* LiveSampleBufferVideoDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveSampleBufferVideoDecoder.swift; sourceTree = "<group>"; };
+		102CA20723AA06DC005C72BF /* LiveSampleBufferAudioDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveSampleBufferAudioDecoder.swift; sourceTree = "<group>"; };
+		104079CE23B704470002A601 /* LiveAsyncResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveAsyncResult.swift; sourceTree = "<group>"; };
+		10407A8223BB31300002A601 /* NWAsyncObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWAsyncObject.swift; sourceTree = "<group>"; };
+		10407A8423BB31D20002A601 /* NWAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWAddress.swift; sourceTree = "<group>"; };
+		10407A8623BB32500002A601 /* NWError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWError.swift; sourceTree = "<group>"; };
+		10407A8823BB32A70002A601 /* NWResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWResolver.swift; sourceTree = "<group>"; };
+		10407A8A23BB330C0002A601 /* NWInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWInterface.swift; sourceTree = "<group>"; };
+		10407A8C23BB33650002A601 /* NWConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWConnection.swift; sourceTree = "<group>"; };
+		10407A8E23BB33930002A601 /* NWEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWEndPoint.swift; sourceTree = "<group>"; };
+		10407A9023BB35640002A601 /* NWPoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWPoller.swift; sourceTree = "<group>"; };
+		10407A9223BB35720002A601 /* NWSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWSocket.swift; sourceTree = "<group>"; };
+		10407A9423BB35E90002A601 /* NWParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWParameters.swift; sourceTree = "<group>"; };
+		10407A9623BB36230002A601 /* NWProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWProtocol.swift; sourceTree = "<group>"; };
+		10407A9823BB376C0002A601 /* NWProtocolFramer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWProtocolFramer.swift; sourceTree = "<group>"; };
+		10407A9A23BB387C0002A601 /* NWPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWPath.swift; sourceTree = "<group>"; };
+		10407AE623BB3B4F0002A601 /* NWListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWListener.swift; sourceTree = "<group>"; };
+		1043AB14239A5C3E002CE873 /* LiveDemuxer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveDemuxer.swift; sourceTree = "<group>"; };
+		1043AB16239A5C8B002CE873 /* LiveFLVDemuxer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveFLVDemuxer.swift; sourceTree = "<group>"; };
+		1043AB18239A5C9C002CE873 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		1043AB19239A5C9C002CE873 /* flv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = flv.h; sourceTree = "<group>"; };
+		1043AB1A239A5C9C002CE873 /* flv.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = flv.c; sourceTree = "<group>"; };
+		1043AB1C239A5CEC002CE873 /* LivePlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePlayer.swift; sourceTree = "<group>"; };
+		1043AB1F239A5E6C002CE873 /* LiveDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveDecoder.swift; sourceTree = "<group>"; };
+		1043AB2D239A99B4002CE873 /* LiveFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveFrame.swift; sourceTree = "<group>"; };
+		1043AB30239B0D91002CE873 /* demuxer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = demuxer.h; sourceTree = "<group>"; };
+		1043AB36239B1DA6002CE873 /* pt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pt.h; sourceTree = "<group>"; };
+		1043AB37239DAF38002CE873 /* LiveRTMPLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveRTMPLoader.swift; sourceTree = "<group>"; };
+		1043AB39239DAF46002CE873 /* LiveHLSLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveHLSLoader.swift; sourceTree = "<group>"; };
+		1043AB3B239E72EF002CE873 /* LivePipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePipeline.swift; sourceTree = "<group>"; };
+		1043AB3F239E738C002CE873 /* LiveFLVPipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveFLVPipeline.swift; sourceTree = "<group>"; };
+		104A706A23B359A100F96266 /* LiveAVPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveAVPlayerViewController.swift; sourceTree = "<group>"; };
+		104A706C23B35D6500F96266 /* LivePlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePlayerViewController.swift; sourceTree = "<group>"; };
+		104A706E23B35D8C00F96266 /* LiveSBPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveSBPlayerViewController.swift; sourceTree = "<group>"; };
+		104A707023B35E6800F96266 /* LiveSBAudioRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveSBAudioRenderer.swift; sourceTree = "<group>"; };
+		104A707223B35E7900F96266 /* LiveSBVideoRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveSBVideoRenderer.swift; sourceTree = "<group>"; };
+		104A707423B447A200F96266 /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		104F686123A86DB4007B33EE /* LiveAudioStreamInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveAudioStreamInfo.swift; sourceTree = "<group>"; };
+		104F686423A8787F007B33EE /* BitStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitStream.swift; sourceTree = "<group>"; };
+		104F686623A89D91007B33EE /* AACFormatHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AACFormatHelper.swift; sourceTree = "<group>"; };
+		104F687723A97F98007B33EE /* LiveVideoStreamInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveVideoStreamInfo.swift; sourceTree = "<group>"; };
+		104F687A23A980A9007B33EE /* VideoFormatHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoFormatHelper.swift; sourceTree = "<group>"; };
+		104F688123A9AA9A007B33EE /* LiveRenderSynchronizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveRenderSynchronizer.swift; sourceTree = "<group>"; };
+		104F688323A9AEA4007B33EE /* LiveStreamSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveStreamSource.swift; sourceTree = "<group>"; };
+		106968B42396F541009E90BC /* LiveFLVLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveFLVLoader.swift; sourceTree = "<group>"; };
+		106968BC2396FB16009E90BC /* LiveLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveLoader.swift; sourceTree = "<group>"; };
+		106968DA23970452009E90BC /* LivePlayeriOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LivePlayeriOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		106968DC23970452009E90BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		106968E023970452009E90BC /* LiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
+		106968E323970452009E90BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		106968E523970453009E90BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		106968E823970453009E90BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		106968EA23970453009E90BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		107235D923A39BD100CC242D /* LiveStreamInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveStreamInfo.swift; sourceTree = "<group>"; };
+		107235DB23A3AE9100CC242D /* LiveAudioFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveAudioFrame.swift; sourceTree = "<group>"; };
+		107235DD23A3AEA100CC242D /* LiveAudioCodedFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveAudioCodedFrame.swift; sourceTree = "<group>"; };
+		108431FB239F4B99007211B4 /* LiveAudioDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveAudioDecoder.swift; sourceTree = "<group>"; };
+		108A945D23A31868000D985D /* LiveListXiGua.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveListXiGua.swift; sourceTree = "<group>"; };
+		108A946023A31D5A000D985D /* LiveListDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveListDownloader.swift; sourceTree = "<group>"; };
+		10921951239FA6C800A26206 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		10921953239FCC4600A26206 /* LivePlayerConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivePlayerConfig.swift; sourceTree = "<group>"; };
+		1092195523A0279A00A26206 /* LiveVideoCodedFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveVideoCodedFrame.swift; sourceTree = "<group>"; };
+		1092195723A027AE00A26206 /* LiveVideoDecodedFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveVideoDecodedFrame.swift; sourceTree = "<group>"; };
+		1092195923A027DB00A26206 /* LiveVideoFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveVideoFrame.swift; sourceTree = "<group>"; };
+		109418A423CCACAD00D0D46B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		10AA4BCF23C55A7B002A4E6F /* RTMPMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTMPMessage.swift; sourceTree = "<group>"; };
+		10AA4BD223C59E55002A4E6F /* RTMPNetConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTMPNetConnection.swift; sourceTree = "<group>"; };
+		10AA4BD423C59E62002A4E6F /* RTMPChunkStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTMPChunkStream.swift; sourceTree = "<group>"; };
+		10AA4BD623C59E82002A4E6F /* RTMPMessageStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTMPMessageStream.swift; sourceTree = "<group>"; };
+		10AA4BDB23C68FFD002A4E6F /* RTMPAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTMPAddress.swift; sourceTree = "<group>"; };
+		10AA4BDE23C69C93002A4E6F /* RTMPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTMPError.swift; sourceTree = "<group>"; };
+		10AA4BE123C6E608002A4E6F /* NWQueuedSerializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWQueuedSerializer.swift; sourceTree = "<group>"; };
+		10AA4BE323C7145F002A4E6F /* RTMPChunkParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTMPChunkParser.swift; sourceTree = "<group>"; };
+		10AA4BE523C71931002A4E6F /* RTMPHandShake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTMPHandShake.swift; sourceTree = "<group>"; };
+		10B622D1238E9905008341C3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		10B622D2238E9905008341C3 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		10B622D5238E990E008341C3 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		10B622D7238E9915008341C3 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		10C5934923A1E7D500461C71 /* bitstream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bitstream.h; sourceTree = "<group>"; };
+		10CA003723C2D12A00D80DED /* LiveRTMPPipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveRTMPPipeline.swift; sourceTree = "<group>"; };
+		10CA003C23C2D1CD00D80DED /* LiveRTMPDemuxer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveRTMPDemuxer.swift; sourceTree = "<group>"; };
+		10CA004023C4311800D80DED /* AMF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMF.swift; sourceTree = "<group>"; };
+		10CA004423C4675200D80DED /* RTMPStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTMPStream.swift; sourceTree = "<group>"; };
+		10CAFFA223C1A79000D80DED /* libVoodooNetwork.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libVoodooNetwork.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		10CAFFC323C1BF7500D80DED /* libVoodooLivePlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libVoodooLivePlayer.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		10CE750323C8CAA800B5DE03 /* NWSimpleRWSerializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NWSimpleRWSerializer.swift; sourceTree = "<group>"; };
+		10E40B1B23AE31E3006688CF /* LiveHLSPipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveHLSPipeline.swift; sourceTree = "<group>"; };
+		10E40B1D23AE332B006688CF /* LiveCustomPipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveCustomPipeline.swift; sourceTree = "<group>"; };
+		10E40B3C23AFA200006688CF /* LiveListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveListViewController.swift; sourceTree = "<group>"; };
+		10E40B4223B07265006688CF /* LivePlayerMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LivePlayerMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		10E40B4423B07265006688CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		10E40B4623B07265006688CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		10E40B4823B07266006688CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		10E40B4B23B07266006688CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		10E40B4D23B07266006688CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10E40B4E23B07266006688CF /* QLivePlayerMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QLivePlayerMac.entitlements; sourceTree = "<group>"; };
+		10E40B5223B075B3006688CF /* LiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
+		10E40B5423B081D7006688CF /* LiveListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveListCellView.swift; sourceTree = "<group>"; };
+		10E40B5623B082EE006688CF /* LiveListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveListViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		106968D723970452009E90BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10CA003F23C2D38900D80DED /* libVoodooNetwork.a in Frameworks */,
+				10CA003123C1C63800D80DED /* libVoodooLivePlayer.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10CAFF9F23C1A79000D80DED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10CAFFC023C1BF7500D80DED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10E40B3F23B07265006688CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10CA003E23C2D38500D80DED /* libVoodooNetwork.a in Frameworks */,
+				10CA003423C1C64F00D80DED /* libVoodooLivePlayer.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1009E72B23BF4294007A64B5 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				1009E72C23BF42E5007A64B5 /* NWSOCKSLayer.swift */,
+				1009E72E23BF42F4007A64B5 /* NWTCPLayer.swift */,
+				1009E73023BF433A007A64B5 /* NWTLSLayer.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		1020D26423B46E7800EAF5EB /* view */ = {
+			isa = PBXGroup;
+			children = (
+				104A706A23B359A100F96266 /* LiveAVPlayerViewController.swift */,
+				104A706C23B35D6500F96266 /* LivePlayerViewController.swift */,
+				104A706E23B35D8C00F96266 /* LiveSBPlayerViewController.swift */,
+				104A707023B35E6800F96266 /* LiveSBAudioRenderer.swift */,
+				104A707223B35E7900F96266 /* LiveSBVideoRenderer.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		10407ACF23BB391C0002A601 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				104F686423A8787F007B33EE /* BitStream.swift */,
+				1020D28B23B5BC3300EAF5EB /* LiveTimer.swift */,
+				104079CE23B704470002A601 /* LiveAsyncResult.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		1043AB10239A5B27002CE873 /* loader */ = {
+			isa = PBXGroup;
+			children = (
+				10CA004323C4673F00D80DED /* rtmp */,
+				106968BC2396FB16009E90BC /* LiveLoader.swift */,
+				106968B42396F541009E90BC /* LiveFLVLoader.swift */,
+				1043AB37239DAF38002CE873 /* LiveRTMPLoader.swift */,
+				1043AB39239DAF46002CE873 /* LiveHLSLoader.swift */,
+			);
+			path = loader;
+			sourceTree = "<group>";
+		};
+		1043AB11239A5B30002CE873 /* demuxer */ = {
+			isa = PBXGroup;
+			children = (
+				10CA003B23C2D1B300D80DED /* rtmp */,
+				1043AB2F239B0D2B002CE873 /* base */,
+				1043AB13239A5B9D002CE873 /* flv */,
+				1043AB14239A5C3E002CE873 /* LiveDemuxer.swift */,
+			);
+			path = demuxer;
+			sourceTree = "<group>";
+		};
+		1043AB13239A5B9D002CE873 /* flv */ = {
+			isa = PBXGroup;
+			children = (
+				1043AB16239A5C8B002CE873 /* LiveFLVDemuxer.swift */,
+				1043AB19239A5C9C002CE873 /* flv.h */,
+				1043AB1A239A5C9C002CE873 /* flv.c */,
+			);
+			path = flv;
+			sourceTree = "<group>";
+		};
+		1043AB1E239A5E5D002CE873 /* decoder */ = {
+			isa = PBXGroup;
+			children = (
+				1043AB1F239A5E6C002CE873 /* LiveDecoder.swift */,
+				1026A6DE239F4AB800322D17 /* LiveVideoDecoder.swift */,
+				108431FB239F4B99007211B4 /* LiveAudioDecoder.swift */,
+				102CA20523AA06CF005C72BF /* LiveSampleBufferVideoDecoder.swift */,
+				102CA20723AA06DC005C72BF /* LiveSampleBufferAudioDecoder.swift */,
+			);
+			path = decoder;
+			sourceTree = "<group>";
+		};
+		1043AB21239A5EED002CE873 /* renderer */ = {
+			isa = PBXGroup;
+			children = (
+				104F688123A9AA9A007B33EE /* LiveRenderSynchronizer.swift */,
+				102CA20323AA04D1005C72BF /* LiveRenderer.swift */,
+			);
+			path = renderer;
+			sourceTree = "<group>";
+		};
+		1043AB2C239A99A7002CE873 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				10921951239FA6C800A26206 /* Errors.swift */,
+				102CA1FF23A9DD12005C72BF /* Constants.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		1043AB2F239B0D2B002CE873 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				1043AB30239B0D91002CE873 /* demuxer.h */,
+				1043AB36239B1DA6002CE873 /* pt.h */,
+				10C5934923A1E7D500461C71 /* bitstream.h */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		1043AB3D239E7308002CE873 /* pipeline */ = {
+			isa = PBXGroup;
+			children = (
+				1092195D23A03F6600A26206 /* frame */,
+				1043AB1E239A5E5D002CE873 /* decoder */,
+				1043AB11239A5B30002CE873 /* demuxer */,
+				1043AB10239A5B27002CE873 /* loader */,
+				1043AB3B239E72EF002CE873 /* LivePipeline.swift */,
+				1043AB3F239E738C002CE873 /* LiveFLVPipeline.swift */,
+				10E40B1B23AE31E3006688CF /* LiveHLSPipeline.swift */,
+				10E40B1D23AE332B006688CF /* LiveCustomPipeline.swift */,
+				10CA003723C2D12A00D80DED /* LiveRTMPPipeline.swift */,
+			);
+			path = pipeline;
+			sourceTree = "<group>";
+		};
+		104A705F23B0C82F00F96266 /* list */ = {
+			isa = PBXGroup;
+			children = (
+				108A945D23A31868000D985D /* LiveListXiGua.swift */,
+				108A946023A31D5A000D985D /* LiveListDownloader.swift */,
+			);
+			path = list;
+			sourceTree = "<group>";
+		};
+		104F687923A9808D007B33EE /* format */ = {
+			isa = PBXGroup;
+			children = (
+				104F686623A89D91007B33EE /* AACFormatHelper.swift */,
+				104F687A23A980A9007B33EE /* VideoFormatHelper.swift */,
+			);
+			path = format;
+			sourceTree = "<group>";
+		};
+		104F687E23A9811E007B33EE /* stream */ = {
+			isa = PBXGroup;
+			children = (
+				104F686123A86DB4007B33EE /* LiveAudioStreamInfo.swift */,
+				104F687723A97F98007B33EE /* LiveVideoStreamInfo.swift */,
+				107235D923A39BD100CC242D /* LiveStreamInfo.swift */,
+				104F688323A9AEA4007B33EE /* LiveStreamSource.swift */,
+			);
+			path = stream;
+			sourceTree = "<group>";
+		};
+		106968DB23970452009E90BC /* LivePlayeriOS */ = {
+			isa = PBXGroup;
+			children = (
+				106968DC23970452009E90BC /* AppDelegate.swift */,
+				106968E023970452009E90BC /* LiveViewController.swift */,
+				10E40B3C23AFA200006688CF /* LiveListViewController.swift */,
+				106968E223970452009E90BC /* Main.storyboard */,
+				106968E523970453009E90BC /* Assets.xcassets */,
+				106968E723970453009E90BC /* LaunchScreen.storyboard */,
+				106968EA23970453009E90BC /* Info.plist */,
+			);
+			path = LivePlayeriOS;
+			sourceTree = "<group>";
+		};
+		1092195D23A03F6600A26206 /* frame */ = {
+			isa = PBXGroup;
+			children = (
+				1043AB2D239A99B4002CE873 /* LiveFrame.swift */,
+				1092195523A0279A00A26206 /* LiveVideoCodedFrame.swift */,
+				1092195723A027AE00A26206 /* LiveVideoDecodedFrame.swift */,
+				1092195923A027DB00A26206 /* LiveVideoFrame.swift */,
+				107235DB23A3AE9100CC242D /* LiveAudioFrame.swift */,
+				107235DD23A3AEA100CC242D /* LiveAudioCodedFrame.swift */,
+			);
+			path = frame;
+			sourceTree = "<group>";
+		};
+		10B622D0238E9905008341C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				10B622D7238E9915008341C3 /* AudioToolbox.framework */,
+				10B622D5238E990E008341C3 /* VideoToolbox.framework */,
+				10B622D1238E9905008341C3 /* AVFoundation.framework */,
+				10B622D2238E9905008341C3 /* AVKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		10CA003B23C2D1B300D80DED /* rtmp */ = {
+			isa = PBXGroup;
+			children = (
+				10CA003C23C2D1CD00D80DED /* LiveRTMPDemuxer.swift */,
+			);
+			path = rtmp;
+			sourceTree = "<group>";
+		};
+		10CA004323C4673F00D80DED /* rtmp */ = {
+			isa = PBXGroup;
+			children = (
+				10CA004023C4311800D80DED /* AMF.swift */,
+				10CA004423C4675200D80DED /* RTMPStream.swift */,
+				10AA4BCF23C55A7B002A4E6F /* RTMPMessage.swift */,
+				10AA4BD223C59E55002A4E6F /* RTMPNetConnection.swift */,
+				10AA4BD423C59E62002A4E6F /* RTMPChunkStream.swift */,
+				10AA4BD623C59E82002A4E6F /* RTMPMessageStream.swift */,
+				10AA4BDB23C68FFD002A4E6F /* RTMPAddress.swift */,
+				10AA4BDE23C69C93002A4E6F /* RTMPError.swift */,
+				10AA4BE323C7145F002A4E6F /* RTMPChunkParser.swift */,
+				10AA4BE523C71931002A4E6F /* RTMPHandShake.swift */,
+			);
+			path = rtmp;
+			sourceTree = "<group>";
+		};
+		10CAFFA323C1A79000D80DED /* VoodooNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				1009E72B23BF4294007A64B5 /* protocols */,
+				10407A8223BB31300002A601 /* NWAsyncObject.swift */,
+				10407A8423BB31D20002A601 /* NWAddress.swift */,
+				10407A8623BB32500002A601 /* NWError.swift */,
+				10407A8823BB32A70002A601 /* NWResolver.swift */,
+				10407A8A23BB330C0002A601 /* NWInterface.swift */,
+				10407A8C23BB33650002A601 /* NWConnection.swift */,
+				10407A8E23BB33930002A601 /* NWEndPoint.swift */,
+				10407A9023BB35640002A601 /* NWPoller.swift */,
+				10407A9223BB35720002A601 /* NWSocket.swift */,
+				10407A9423BB35E90002A601 /* NWParameters.swift */,
+				10407A9623BB36230002A601 /* NWProtocol.swift */,
+				10407A9823BB376C0002A601 /* NWProtocolFramer.swift */,
+				10407A9A23BB387C0002A601 /* NWPath.swift */,
+				10407AE623BB3B4F0002A601 /* NWListener.swift */,
+				1009E72723BDDBE7007A64B5 /* NWNetworkConfiguration.swift */,
+				1009E72923BE23BE007A64B5 /* NWProtocolLayer.swift */,
+				10AA4BE123C6E608002A4E6F /* NWQueuedSerializer.swift */,
+				10CE750323C8CAA800B5DE03 /* NWSimpleRWSerializer.swift */,
+			);
+			path = VoodooNetwork;
+			sourceTree = "<group>";
+		};
+		10CAFFC423C1BF7500D80DED /* VoodooLivePlayer */ = {
+			isa = PBXGroup;
+			children = (
+				1020D26423B46E7800EAF5EB /* view */,
+				104A705F23B0C82F00F96266 /* list */,
+				10E40B8223B0A00D006688CF /* common */,
+				1043AB2C239A99A7002CE873 /* utils */,
+				1043AB21239A5EED002CE873 /* renderer */,
+				1043AB3D239E7308002CE873 /* pipeline */,
+				10921953239FCC4600A26206 /* LivePlayerConfig.swift */,
+				1043AB1C239A5CEC002CE873 /* LivePlayer.swift */,
+				1043AB18239A5C9C002CE873 /* Bridging-Header.h */,
+			);
+			path = VoodooLivePlayer;
+			sourceTree = "<group>";
+		};
+		10E40B4323B07265006688CF /* LivePlayerMac */ = {
+			isa = PBXGroup;
+			children = (
+				10E40B4423B07265006688CF /* AppDelegate.swift */,
+				10E40B4623B07265006688CF /* ViewController.swift */,
+				10E40B4823B07266006688CF /* Assets.xcassets */,
+				10E40B4A23B07266006688CF /* Main.storyboard */,
+				10E40B4D23B07266006688CF /* Info.plist */,
+				10E40B4E23B07266006688CF /* QLivePlayerMac.entitlements */,
+				10E40B5223B075B3006688CF /* LiveViewController.swift */,
+				10E40B5423B081D7006688CF /* LiveListCellView.swift */,
+				10E40B5623B082EE006688CF /* LiveListViewController.swift */,
+				104A707423B447A200F96266 /* MainWindowController.swift */,
+			);
+			path = LivePlayerMac;
+			sourceTree = "<group>";
+		};
+		10E40B8223B0A00D006688CF /* common */ = {
+			isa = PBXGroup;
+			children = (
+				10407ACF23BB391C0002A601 /* utils */,
+				104F687923A9808D007B33EE /* format */,
+				104F687E23A9811E007B33EE /* stream */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		1A57B043D79E8D9C7248458D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				106968DA23970452009E90BC /* LivePlayeriOS.app */,
+				10E40B4223B07265006688CF /* LivePlayerMac.app */,
+				10CAFFA223C1A79000D80DED /* libVoodooNetwork.a */,
+				10CAFFC323C1BF7500D80DED /* libVoodooLivePlayer.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A57B2559FD4C9738CA540A4 = {
+			isa = PBXGroup;
+			children = (
+				109418A423CCACAD00D0D46B /* Default-568h@2x.png */,
+				106968DB23970452009E90BC /* LivePlayeriOS */,
+				10E40B4323B07265006688CF /* LivePlayerMac */,
+				10CAFFA323C1A79000D80DED /* VoodooNetwork */,
+				10CAFFC423C1BF7500D80DED /* VoodooLivePlayer */,
+				1A57B043D79E8D9C7248458D /* Products */,
+				10B622D0238E9905008341C3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		106968D923970452009E90BC /* LivePlayeriOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 106968EB23970453009E90BC /* Build configuration list for PBXNativeTarget "LivePlayeriOS" */;
+			buildPhases = (
+				106968D623970452009E90BC /* Sources */,
+				106968D723970452009E90BC /* Frameworks */,
+				106968D823970452009E90BC /* Resources */,
+				10407A4223BB2BB60002A601 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10CA003023C1C62E00D80DED /* PBXTargetDependency */,
+			);
+			name = LivePlayeriOS;
+			productName = QLivePlayer;
+			productReference = 106968DA23970452009E90BC /* LivePlayeriOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		10CAFFA123C1A79000D80DED /* VoodooNetwork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10CAFFA623C1A79000D80DED /* Build configuration list for PBXNativeTarget "VoodooNetwork" */;
+			buildPhases = (
+				10CAFF9E23C1A79000D80DED /* Sources */,
+				10CAFF9F23C1A79000D80DED /* Frameworks */,
+				10CAFFA023C1A79000D80DED /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VoodooNetwork;
+			productName = VoodooNetwork;
+			productReference = 10CAFFA223C1A79000D80DED /* libVoodooNetwork.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		10CAFFC223C1BF7500D80DED /* VoodooLivePlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10CAFFC723C1BF7500D80DED /* Build configuration list for PBXNativeTarget "VoodooLivePlayer" */;
+			buildPhases = (
+				10CAFFBF23C1BF7500D80DED /* Sources */,
+				10CAFFC023C1BF7500D80DED /* Frameworks */,
+				10CAFFC123C1BF7500D80DED /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10CA003623C1CA3600D80DED /* PBXTargetDependency */,
+			);
+			name = VoodooLivePlayer;
+			productName = VoodooLivePlayer;
+			productReference = 10CAFFC323C1BF7500D80DED /* libVoodooLivePlayer.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		10E40B4123B07265006688CF /* LivePlayerMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10E40B4F23B07266006688CF /* Build configuration list for PBXNativeTarget "LivePlayerMac" */;
+			buildPhases = (
+				10E40B3E23B07265006688CF /* Sources */,
+				10E40B3F23B07265006688CF /* Frameworks */,
+				10E40B4023B07265006688CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10CA003323C1C64900D80DED /* PBXTargetDependency */,
+			);
+			name = LivePlayerMac;
+			productName = QLivePlayerMac;
+			productReference = 10E40B4223B07265006688CF /* LivePlayerMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A57B28CB4EE6A87DD783F6A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = qs;
+				TargetAttributes = {
+					106968D923970452009E90BC = {
+						CreatedOnToolsVersion = 11.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					10CAFFA123C1A79000D80DED = {
+						CreatedOnToolsVersion = 11.3;
+						ProvisioningStyle = Automatic;
+					};
+					10CAFFC223C1BF7500D80DED = {
+						CreatedOnToolsVersion = 11.3;
+						ProvisioningStyle = Automatic;
+					};
+					10E40B4123B07265006688CF = {
+						CreatedOnToolsVersion = 11.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1A57BC7A2575FC002F0EBF3C /* Build configuration list for PBXProject "VoodooLivePlayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1A57B2559FD4C9738CA540A4;
+			productRefGroup = 1A57B043D79E8D9C7248458D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				106968D923970452009E90BC /* LivePlayeriOS */,
+				10E40B4123B07265006688CF /* LivePlayerMac */,
+				10CAFFA123C1A79000D80DED /* VoodooNetwork */,
+				10CAFFC223C1BF7500D80DED /* VoodooLivePlayer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		106968D823970452009E90BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				106968E923970453009E90BC /* LaunchScreen.storyboard in Resources */,
+				109418A623CCB08700D0D46B /* Default-568h@2x.png in Resources */,
+				106968E623970453009E90BC /* Assets.xcassets in Resources */,
+				106968E423970452009E90BC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10E40B4023B07265006688CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10E40B4923B07266006688CF /* Assets.xcassets in Resources */,
+				10E40B4C23B07266006688CF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		106968D623970452009E90BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10E40B3D23AFA200006688CF /* LiveListViewController.swift in Sources */,
+				106968E123970452009E90BC /* LiveViewController.swift in Sources */,
+				106968DD23970452009E90BC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10CAFF9E23C1A79000D80DED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10CAFFAC23C1A82000D80DED /* NWAsyncObject.swift in Sources */,
+				10CAFFB723C1A82000D80DED /* NWProtocolFramer.swift in Sources */,
+				10CAFFAF23C1A82000D80DED /* NWResolver.swift in Sources */,
+				10CE750423C8CAA800B5DE03 /* NWSimpleRWSerializer.swift in Sources */,
+				10CAFFB023C1A82000D80DED /* NWInterface.swift in Sources */,
+				10CAFFB423C1A82000D80DED /* NWSocket.swift in Sources */,
+				10CAFFAB23C1A82000D80DED /* NWTLSLayer.swift in Sources */,
+				10CAFFB123C1A82000D80DED /* NWConnection.swift in Sources */,
+				10CAFFAA23C1A82000D80DED /* NWTCPLayer.swift in Sources */,
+				10CAFFAD23C1A82000D80DED /* NWAddress.swift in Sources */,
+				10CAFFB823C1A82000D80DED /* NWPath.swift in Sources */,
+				10CAFFB623C1A82000D80DED /* NWProtocol.swift in Sources */,
+				10CAFFA923C1A82000D80DED /* NWSOCKSLayer.swift in Sources */,
+				10CAFFB523C1A82000D80DED /* NWParameters.swift in Sources */,
+				10CAFFAE23C1A82000D80DED /* NWError.swift in Sources */,
+				10CAFFB223C1A82000D80DED /* NWEndPoint.swift in Sources */,
+				10CAFFBB23C1A82000D80DED /* NWProtocolLayer.swift in Sources */,
+				10CAFFB323C1A82000D80DED /* NWPoller.swift in Sources */,
+				10CAFFBA23C1A82000D80DED /* NWNetworkConfiguration.swift in Sources */,
+				10CAFFB923C1A82000D80DED /* NWListener.swift in Sources */,
+				10AA4BE223C6E608002A4E6F /* NWQueuedSerializer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10CAFFBF23C1BF7500D80DED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10CA002123C1C3EC00D80DED /* flv.c in Sources */,
+				10CA002423C1C3F300D80DED /* LiveFLVLoader.swift in Sources */,
+				10AA4BD723C59E82002A4E6F /* RTMPMessageStream.swift in Sources */,
+				10CAFFFD23C1C3BC00D80DED /* LiveVideoDecodedFrame.swift in Sources */,
+				10CA002023C1C3EC00D80DED /* LiveFLVDemuxer.swift in Sources */,
+				10CA002923C1C41600D80DED /* LivePipeline.swift in Sources */,
+				10CAFFFE23C1C3BC00D80DED /* LiveVideoFrame.swift in Sources */,
+				10CA002A23C1C41600D80DED /* LiveFLVPipeline.swift in Sources */,
+				10AA4BE623C71931002A4E6F /* RTMPHandShake.swift in Sources */,
+				10CA003823C2D12A00D80DED /* LiveRTMPPipeline.swift in Sources */,
+				10CA002323C1C3F300D80DED /* LiveLoader.swift in Sources */,
+				10CA001C23C1C3E000D80DED /* LiveVideoDecoder.swift in Sources */,
+				10AA4BD323C59E55002A4E6F /* RTMPNetConnection.swift in Sources */,
+				10CAFFEE23C1C21900D80DED /* VideoFormatHelper.swift in Sources */,
+				10CA002B23C1C41600D80DED /* LiveHLSPipeline.swift in Sources */,
+				10AA4BE423C7145F002A4E6F /* RTMPChunkParser.swift in Sources */,
+				10CAFFF123C1C21900D80DED /* LiveStreamInfo.swift in Sources */,
+				10CA003D23C2D1CD00D80DED /* LiveRTMPDemuxer.swift in Sources */,
+				10CAFFEC23C1C21900D80DED /* LiveAsyncResult.swift in Sources */,
+				10CAFFFB23C1C3BC00D80DED /* LiveFrame.swift in Sources */,
+				10CA001A23C1C3D800D80DED /* LiveRenderer.swift in Sources */,
+				10CAFFF023C1C21900D80DED /* LiveVideoStreamInfo.swift in Sources */,
+				10CA002E23C1C41F00D80DED /* LivePlayer.swift in Sources */,
+				10CAFFF623C1C3AF00D80DED /* LiveAVPlayerViewController.swift in Sources */,
+				10AA4BDC23C68FFD002A4E6F /* RTMPAddress.swift in Sources */,
+				10CA001923C1C3D800D80DED /* LiveRenderSynchronizer.swift in Sources */,
+				10CAFFF923C1C3B000D80DED /* LiveSBAudioRenderer.swift in Sources */,
+				10CAFFE923C1C21900D80DED /* LiveListDownloader.swift in Sources */,
+				10CA001B23C1C3E000D80DED /* LiveDecoder.swift in Sources */,
+				10CAFFFA23C1C3B000D80DED /* LiveSBVideoRenderer.swift in Sources */,
+				10CAFFF823C1C3B000D80DED /* LiveSBPlayerViewController.swift in Sources */,
+				10CA000023C1C3BC00D80DED /* LiveAudioCodedFrame.swift in Sources */,
+				10CAFFED23C1C21900D80DED /* AACFormatHelper.swift in Sources */,
+				10CAFFF223C1C21900D80DED /* LiveStreamSource.swift in Sources */,
+				10CAFFEA23C1C21900D80DED /* BitStream.swift in Sources */,
+				10CA002623C1C3F300D80DED /* LiveHLSLoader.swift in Sources */,
+				10CA001E23C1C3E000D80DED /* LiveSampleBufferVideoDecoder.swift in Sources */,
+				10CA001F23C1C3E000D80DED /* LiveSampleBufferAudioDecoder.swift in Sources */,
+				10CAFFE823C1C21900D80DED /* LiveListXiGua.swift in Sources */,
+				10CAFFEF23C1C21900D80DED /* LiveAudioStreamInfo.swift in Sources */,
+				10CA002C23C1C41600D80DED /* LiveCustomPipeline.swift in Sources */,
+				10CA001723C1C3D700D80DED /* Errors.swift in Sources */,
+				10CA001D23C1C3E000D80DED /* LiveAudioDecoder.swift in Sources */,
+				10CAFFEB23C1C21900D80DED /* LiveTimer.swift in Sources */,
+				10CA002D23C1C41F00D80DED /* LivePlayerConfig.swift in Sources */,
+				10AA4BDF23C69C93002A4E6F /* RTMPError.swift in Sources */,
+				10CAFFF723C1C3B000D80DED /* LivePlayerViewController.swift in Sources */,
+				10CAFFFF23C1C3BC00D80DED /* LiveAudioFrame.swift in Sources */,
+				10CA004523C4675200D80DED /* RTMPStream.swift in Sources */,
+				10CAFFFC23C1C3BC00D80DED /* LiveVideoCodedFrame.swift in Sources */,
+				10CA002223C1C3EC00D80DED /* LiveDemuxer.swift in Sources */,
+				10CA004123C4311800D80DED /* AMF.swift in Sources */,
+				10AA4BD023C55A7B002A4E6F /* RTMPMessage.swift in Sources */,
+				10AA4BD523C59E62002A4E6F /* RTMPChunkStream.swift in Sources */,
+				10CA001823C1C3D700D80DED /* Constants.swift in Sources */,
+				10CA002523C1C3F300D80DED /* LiveRTMPLoader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10E40B3E23B07265006688CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10E40B5523B081D7006688CF /* LiveListCellView.swift in Sources */,
+				10E40B5723B082EE006688CF /* LiveListViewController.swift in Sources */,
+				104A707523B447A200F96266 /* MainWindowController.swift in Sources */,
+				10E40B4723B07265006688CF /* ViewController.swift in Sources */,
+				10E40B5323B075B3006688CF /* LiveViewController.swift in Sources */,
+				10E40B4523B07265006688CF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		10CA003023C1C62E00D80DED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10CAFFC223C1BF7500D80DED /* VoodooLivePlayer */;
+			targetProxy = 10CA002F23C1C62E00D80DED /* PBXContainerItemProxy */;
+		};
+		10CA003323C1C64900D80DED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10CAFFC223C1BF7500D80DED /* VoodooLivePlayer */;
+			targetProxy = 10CA003223C1C64900D80DED /* PBXContainerItemProxy */;
+		};
+		10CA003623C1CA3600D80DED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10CAFFA123C1A79000D80DED /* VoodooNetwork */;
+			targetProxy = 10CA003523C1CA3600D80DED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		106968E223970452009E90BC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				106968E323970452009E90BC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		106968E723970453009E90BC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				106968E823970453009E90BC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		10E40B4A23B07266006688CF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				10E40B4B23B07266006688CF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		106968EC23970453009E90BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = LivePlayeriOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.voodoo.LivePlayeriOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		106968ED23970453009E90BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = LivePlayeriOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.voodoo.LivePlayeriOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		10CAFFA723C1A79000D80DED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s i386 x86_64";
+			};
+			name = Debug;
+		};
+		10CAFFA823C1A79000D80DED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s i386 x86_64";
+			};
+			name = Release;
+		};
+		10CAFFC823C1BF7500D80DED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
+				SWIFT_OBJC_BRIDGING_HEADER = "VoodooLivePlayer/Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s i386 x86_64";
+			};
+			name = Debug;
+		};
+		10CAFFC923C1BF7500D80DED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
+				SWIFT_OBJC_BRIDGING_HEADER = "VoodooLivePlayer/Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e armv7 armv7s i386 x86_64";
+			};
+			name = Release;
+		};
+		10E40B5023B07266006688CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LivePlayerMac/LivePlayerMac.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = LivePlayerMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.voodoo.LivePlayerMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		10E40B5123B07266006688CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LivePlayerMac/LivePlayerMac.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = LivePlayerMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.voodoo.LivePlayerMac;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		1A57B41823F4AD32327239D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A57BBB0E9FB3DACC4362987 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		106968EB23970453009E90BC /* Build configuration list for PBXNativeTarget "LivePlayeriOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				106968EC23970453009E90BC /* Debug */,
+				106968ED23970453009E90BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10CAFFA623C1A79000D80DED /* Build configuration list for PBXNativeTarget "VoodooNetwork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10CAFFA723C1A79000D80DED /* Debug */,
+				10CAFFA823C1A79000D80DED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10CAFFC723C1BF7500D80DED /* Build configuration list for PBXNativeTarget "VoodooLivePlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10CAFFC823C1BF7500D80DED /* Debug */,
+				10CAFFC923C1BF7500D80DED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10E40B4F23B07266006688CF /* Build configuration list for PBXNativeTarget "LivePlayerMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10E40B5023B07266006688CF /* Debug */,
+				10E40B5123B07266006688CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A57BC7A2575FC002F0EBF3C /* Build configuration list for PBXProject "VoodooLivePlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A57BBB0E9FB3DACC4362987 /* Debug */,
+				1A57B41823F4AD32327239D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A57B28CB4EE6A87DD783F6A /* Project object */;
+}
