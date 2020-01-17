@@ -178,7 +178,8 @@ class RTMPStream {
     
     func writeLongString(_ value: String) -> Bool {
         if let wvalue = value.data(using: .utf8) {
-            let len = min(wvalue.count, Int.max)
+            /// here, we take Int32.max, actually we need UInt32.max, but in 32bits, Int = Int32, UInt32.max will overflow. And in 64bits, Int = Int64, Int.max is not fit UInt32.
+            let len = min(wvalue.count, Int(Int32.max))
             writeUInt32(UInt32(len))
             write(data: wvalue.subdata(in: 0..<len))
             return true
