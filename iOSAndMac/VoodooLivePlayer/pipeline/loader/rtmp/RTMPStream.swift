@@ -178,7 +178,7 @@ class RTMPStream {
     
     func writeLongString(_ value: String) -> Bool {
         if let wvalue = value.data(using: .utf8) {
-            let len = min(wvalue.count, 0xffffffff)
+            let len = min(wvalue.count, Int.max)
             writeUInt32(UInt32(len))
             write(data: wvalue.subdata(in: 0..<len))
             return true
