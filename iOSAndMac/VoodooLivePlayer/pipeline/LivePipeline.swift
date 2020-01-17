@@ -31,8 +31,8 @@ enum LivePipelineData {
 }
 
 
-/*
- 使用管线来控制整体下载与解码以及缓冲
+/**
+ Pipeline is used to control downloading, decoding and caching
  */
 class LivePipeline : LivePlayerComponent {
     internal weak var player: LivePlayer!

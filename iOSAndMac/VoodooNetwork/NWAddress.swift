@@ -277,7 +277,8 @@ public protocol IPAddress {
         public static let linkLocalRouters: IPv6Address = IPv6Address(in6addr_linklocal_allrouters)
         
         /// IPv6 all link local routers multicast
-        public static let linkLocalV2Routers: IPv6Address = IPv6Address(in6addr_linklocal_allv2routers)
+        /// disabled this for dyld symbol not found crashing when iOS version is below 12
+        /// public static let linkLocalV2Routers: IPv6Address = IPv6Address(in6addr_linklocal_allv2routers)
 
         public enum Scope : UInt8 {
 

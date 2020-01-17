@@ -24,7 +24,6 @@ class LiveFLVPipeline : LiveCustomPipeline {
         self.loader = LiveFLVLoader(source: source)
         self.demuxer = LiveFLVDemuxer()
         super.init(player: player, streamSource: source)
-        //self.player.playerView.mode = .sampleBufferMode
         loader.delegate = self
         loader.delegateQueue = dispatchQueue
         demuxer.delegate = self
@@ -35,11 +34,6 @@ class LiveFLVPipeline : LiveCustomPipeline {
         dispatchQueue.async {
             guard self.state == .READY else { return }
             self.change(state: .LOADING)
-            /*if self.loader.start() {
-                print("LOADING...")
-            } else {
-                self.raiseError(error: nil)
-            }*/
         }
         return true
     }

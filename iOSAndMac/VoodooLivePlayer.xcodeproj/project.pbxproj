@@ -265,7 +265,7 @@
 		10E40B4823B07266006688CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10E40B4B23B07266006688CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		10E40B4D23B07266006688CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		10E40B4E23B07266006688CF /* QLivePlayerMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QLivePlayerMac.entitlements; sourceTree = "<group>"; };
+		10E40B4E23B07266006688CF /* LivePlayerMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LivePlayerMac.entitlements; sourceTree = "<group>"; };
 		10E40B5223B075B3006688CF /* LiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
 		10E40B5423B081D7006688CF /* LiveListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveListCellView.swift; sourceTree = "<group>"; };
 		10E40B5623B082EE006688CF /* LiveListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveListViewController.swift; sourceTree = "<group>"; };
@@ -570,7 +570,7 @@
 				10E40B4823B07266006688CF /* Assets.xcassets */,
 				10E40B4A23B07266006688CF /* Main.storyboard */,
 				10E40B4D23B07266006688CF /* Info.plist */,
-				10E40B4E23B07266006688CF /* QLivePlayerMac.entitlements */,
+				10E40B4E23B07266006688CF /* LivePlayerMac.entitlements */,
 				10E40B5223B075B3006688CF /* LiveViewController.swift */,
 				10E40B5423B081D7006688CF /* LiveListCellView.swift */,
 				10E40B5623B082EE006688CF /* LiveListViewController.swift */,
@@ -700,6 +700,7 @@
 				TargetAttributes = {
 					106968D923970452009E90BC = {
 						CreatedOnToolsVersion = 11.2.1;
+						DevelopmentTeam = K5K73DP6S3;
 						ProvisioningStyle = Automatic;
 					};
 					10CAFFA123C1A79000D80DED = {
@@ -929,7 +930,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = K5K73DP6S3;
 				INFOPLIST_FILE = LivePlayeriOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -946,7 +947,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = K5K73DP6S3;
 				INFOPLIST_FILE = LivePlayeriOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
